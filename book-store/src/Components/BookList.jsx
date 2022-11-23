@@ -3,7 +3,6 @@ import SingleBook from "./SingleBook";
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
@@ -17,17 +16,9 @@ class BookList extends React.Component {
       <Container>
         <div class="container-fluid">
           <Navbar bg="dark" variant="dark" expand="lg">
-            <Navbar.Brand href="#">LouisBooks</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="mr-auto my-2 my-lg-0"
-                style={{ maxHeight: "100px" }}
-                navbarScroll
-              >
-                <Nav.Link href="#action1">Home</Nav.Link>
-              </Nav>
-              <Form className="d-flex">
+              <Form className="d-flex w-100">
                 <FormControl
                   type="search"
                   placeholder="Search"
@@ -37,7 +28,6 @@ class BookList extends React.Component {
                     this.setState({ searchQuery: e.target.value })
                   }
                 />
-                <Button variant="outline-light">Search</Button>
               </Form>
             </Navbar.Collapse>
           </Navbar>

@@ -12,6 +12,7 @@ class SingleBook extends Component {
   render() {
     return (
       <Card
+        key={this.props.book.asin}
         onClick={() => this.setState({ selected: !this.state.selected })}
         style={{ border: this.state.selected ? "3px solid red" : "none" }}
       >

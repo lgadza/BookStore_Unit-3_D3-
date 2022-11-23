@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App container-fluid">
       <WarningSign text="your books available" variant="danger" />
-      <MyBadge text="whatever" color="primary" />
+      <MyBadge text="This is my Badge" color="dark" />
 
       <SingleBook book={History[0]} />
       <BookList books={History} />
