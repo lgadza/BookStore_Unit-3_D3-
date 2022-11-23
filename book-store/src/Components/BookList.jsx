@@ -2,8 +2,7 @@ import React from "react";
 import SingleBook from "./SingleBook";
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
+
 import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
 
@@ -38,7 +37,7 @@ class BookList extends React.Component {
               element.title.toLowerCase().includes(this.state.searchQuery)
             )
             .map((element) => (
-              <Col xs={4}>
+              <Col xs={4} md={3} className="my-4">
                 <SingleBook book={element} />
               </Col>
             ))}

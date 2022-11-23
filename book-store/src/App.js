@@ -9,9 +9,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App container-fluid">
-      <WarningSign text="your books available" variant="danger" />
-      <MyBadge text="This is my Badge" color="dark" />
+    <div className="App container-fluid htmlBackgrourd ">
+      <WarningSign text="Your Book is not available" variant="danger" />
+      <MyBadge text="This is my Badge" color="light" />
 
       <SingleBook book={History[0]} />
       <BookList books={History} />
@@ -20,8 +20,3 @@ function App() {
 }
 
 export default App;
-{
-  /* <SingleBook />
-      <BookList />
-      <MyBadge /> */
-}
